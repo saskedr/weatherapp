@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>where? there!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="shortcut icon" type="image/jpg" href="./favicon.ico" />
+</head>
+
+<body>
+    <header>
+        <a href="./index.html" class="logo">where?there!</a>
+        <ul>
+            <li><a href="./moscow.html">Москва</a></li>
+            <li><a href="./london.html">Лондон</a></li>
+            <li><a href="./dubai.html">Дубай</a></li>
+            <li><a href="./search.html">Свой город</a></li>
+            <li><a href="./about.html">О нас</a></li>
+            <li><a href="./contacts.html">Контакты</a></li>
+        </ul>
+    </header>
+    <div class="card">
+        <div>
+            <div class="weather loading">
+                <p class="info-txt"></p>
+                <h2 class="city">Погода в Москве</h2>
+                <div class="flex">
+                    <h1 class="temp">-3°C</h1>
+                    <img src="https://openweathermap.org/img/wn/04n.png" alt="" class='icon' />
+                    <div class="information">
+                        <div class="description">Облачно</div>
+                        <div class="feels_like">Ощущается как -3°C</div>
+                    </div>
+                </div>
+                <div class="humidity">Влажность: 55%</div>
+                <div class="wind">Скорость ветра: 3 м/с</div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            weather.search("Москва")
+            console.log("ds")
+        }
+    </script>
+</body>
+
+</html>
